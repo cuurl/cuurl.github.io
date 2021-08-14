@@ -21,9 +21,13 @@
     <div id = "wrapper">
         <body>
             <h1>How does your city fare?</h1>
-            <iframe frameborder="0" width="1000px" height="500px" src="https://repl.it/@cuurl/wokProject?lite=1&outputonly=1"></iframe>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
-            <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h3>
+            <iframe frameborder="10" width="1000px" height="500px" src="https://repl.it/@cuurl/wokProject?lite=1&outputonly=1"></iframe>
+            <h2>How does your city hold up in conversations about social issues, on the Twitter platform?</h2>
+            <h3>To start the application, press the play button, and wait for a prompt asking for a location.</h3>
+            <h3>This application takes in a single parameter (your location, in City/State format) and determines both the number of tweets that are likely socially insensitive (racist, sexist, etc.), and the number of tweets that likely express support for organizations that are devoted to bringing attention to fundamental social issues; this algorithm only covers the past 7-days of tweets in a particular region, due to limitations with the Tweepy API [1 -- Search Methods].</h3>
+            <h3>To rank the relative "sensitivity" of a tweet, the application relies on two sets of hashtags: one which denotes social insensitivity, and one that denotes social solidarity and understanding. I plan to consistently update these hashtags, as Twitter trends are certainly subject to change over time.</h3>
+            <h4>Note: if you are launching the site for the first time, the first use of the algorithm will be pretty slow, as the program host (Repl.it) needs to download relevant program packages in order for the program to function. If your browser stores cookies, subsequent launches of the application will be much faster!</h4>
+            <h4>This project makes use of Python libraries Tweepy (tweet analysis) [2] and GeoPy (converts a query in City/State format to GPS coordinates). [3]<h4>
         </body>
     </div>
     
@@ -37,6 +41,7 @@
 
         h1 {
             font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
         }
 
         body {
@@ -73,7 +78,8 @@
         }
 
         html {
-            background-color: rgba(156, 153, 153, 0.788)
+            background-color: #9c9999c9
         }
+        
     </style>
 </html>
